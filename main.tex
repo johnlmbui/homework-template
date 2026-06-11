@@ -1,0 +1,80 @@
+% Inspired by Josh Davis's homework template:
+% https://github.com/jdavis/latex-homework-template
+
+\documentclass{article}
+
+%
+% Preamble (homework.sty), necessary for packages, custom commands, etc.
+%
+\usepackage{homework}
+
+% --------------------------------------------------------------------------------
+% Homework Layout (EDIT HERE)
+% --------------------------------------------------------------------------------
+\newcommand{\hmwkTitle}{Homework\ \#} % Title
+\newcommand{\hmwkDueDate}{MM/DD/YY} % Date
+\newcommand{\hmwkClass}{Course Name} % Course
+\newcommand{\hmwkClassTime}{Section} % Section
+\newcommand{\hmwkClassInstructor}{Professor Name} % Instructor
+\newcommand{\hmwkAuthorName}{Author Name} % Author
+
+% --------------------------------------------------------------------------------
+% Title Page Layout (EDIT HERE)
+% --------------------------------------------------------------------------------
+\title{
+    \vspace{2in}
+    \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+    \normalsize\vspace{0.1in}\small{Due\ Date:\ \hmwkDueDate}\\
+    \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+    \vspace{3in}
+}
+\author{\hmwkAuthorName}
+\date{}
+
+% --------------------------------------------------------------------------------
+% Header & Footer Layout (EDIT HERE)
+% --------------------------------------------------------------------------------
+\linespread{1.1}
+
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName}
+\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime): \hmwkTitle}
+\rhead{\firstxmark}
+\lfoot{\lastxmark}
+\cfoot{\thepage}
+
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+\setlength\parindent{0pt}
+
+% --------------------------------------------------------------------------------
+% Main Document
+% --------------------------------------------------------------------------------
+\begin{document}
+
+\maketitle
+\newpage
+
+\input{homework/example}
+
+\begin{comment}
+	\input{Homework/01}
+	\newpage
+	\input{Homework/02}
+	\newpage
+	\input{Homework/03}
+	\newpage
+	\input{Homework/04}
+	\newpage
+	\input{Homework/05}
+	\newpage
+	\input{Homework/06}
+	\newpage
+	\input{Homework/07}
+	\newpage
+	\input{Homework/08}
+	\newpage
+\end{comment}
+
+\end{document}
