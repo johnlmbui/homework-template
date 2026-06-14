@@ -12,6 +12,7 @@
 	
 	We solve each solution algebraically to determine a possible constant
 	\(c\).
+	\\
 	
 	\textbf{Part One}
 	
@@ -28,6 +29,7 @@
 	\]
 	
 	Thus a valid \(c\) could be when \(c = 2\).
+	\\
 	
 	\textbf{Part Two}
 	
@@ -48,6 +50,7 @@
 	\]
 	
 	Thus a valid \(c\) is \(c = 2\).
+	\\
 	
 	\textbf{Part Three}
 	
@@ -70,6 +73,7 @@
 \begin{homeworkProblem}
 	Let \(\Sigma = \{0, 1\}\). Construct a DFA \(A\) that recognizes the
 	language that consists of all binary numbers that can be divided by 5.
+	\\
 	
 	Let the state \(q_k\) indicate the remainder of \(k\) divided by 5. For
 	example, the remainder of 2 would correlate to state \(q_2\) because \(7
@@ -105,12 +109,14 @@
 	\end{figure}
 	
 	\textbf{Justification}
+	\\
 	
 	Take a given binary number, \(x\). Since there are only two inputs to our
 	state machine, \(x\) can either become \(x0\) or \(x1\). When a 0 comes
 	into the state machine, it is the same as taking the binary number and
 	multiplying it by two. When a 1 comes into the machine, it is the same as
 	multipying by two and adding one.
+	\\
 	
 	Using this knowledge, we can construct a transition table that tell us
 	where to go:
@@ -138,7 +144,7 @@
 \begin{homeworkProblem}
 	Write part of \alg{Quick-Sort($list, start, end$)}
 	
-	\begin{algorithm}
+	\begin{algorithm}[]
 		\begin{algorithmic}[1]
 			\Function{Quick-Sort}{$list, start, end$}
 			\If{$start \geq end$}
@@ -160,11 +166,13 @@
 	\(Y_i = \beta_1 x_i + e_i\) with \(i = 1, \ldots, n\), \(\E [e_i] = 0\),
 	and \(\Var [e_i] = \sigma^2_e\) and \(\Cov[e_i, e_j] = 0, \forall i \neq
 	j\).
+	\\
 	
 	\part
 	
 	Find the least squares esimator for \(\hat{\beta_1}\) for the slope
 	\(\beta_1\).
+	\\
 	
 	\solution
 	
@@ -219,6 +227,7 @@
 	
 	Calculate the bias and the variance for the estimated slope
 	\(\hat{\beta_1}\).
+	\\
 	
 	\solution
 	
@@ -264,6 +273,7 @@
 	
 	Thus since our estimator's expected value is \(\beta_1\), we can conclude
 	that the bias of our estimator is 0.
+	\\
 	
 	For the variance:
 	
@@ -336,6 +346,7 @@
 		\hdots + a_1n^1 + a_0n^0\) even if \(c_1 = 1\) and \(n_0 = 1\).  This
 		is because \(n^k \leq c_1 \cdot a_kn^k\) for any nonnegative constant,
 		\(c_1\) and \(a_k\).
+		\\
 		
 		Taking the second inequality, we prove it in the following way.
 		By summation, \(\sum\limits_{i=0}^k a_i\) will give us a new constant,
@@ -356,7 +367,6 @@
 		where \(n_0 = 1\) and \(c_2 = A\). \(c_2\) is just a constant. Thus the
 		proof is complete.
 	\end{proof}
-	
 \end{homeworkProblem}
 
 \pagebreak

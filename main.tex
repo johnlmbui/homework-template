@@ -3,50 +3,49 @@
 
 \documentclass{article}
 
-%
+% --------------------------------------------------------------------------------
 % Preamble (homework.sty), necessary for packages, custom commands, etc.
-%
+% --------------------------------------------------------------------------------
 \usepackage{homework}
 
 % --------------------------------------------------------------------------------
 % Homework Layout (EDIT HERE)
 % --------------------------------------------------------------------------------
-\newcommand{\hmwkTitle}{Homework\ \#} % Title
-\newcommand{\hmwkDueDate}{MM/DD/YY} % Date
-\newcommand{\hmwkClass}{Course Name} % Course
-\newcommand{\hmwkClassTime}{Section} % Section
-\newcommand{\hmwkClassInstructor}{Professor Name} % Instructor
-\newcommand{\hmwkAuthorName}{Author Name} % Author
+\newcommand{\hwTitle}{Homework}
+\newcommand{\hwDue}{Date}
+\newcommand{\hwCourse}{Course}
+\newcommand{\hwSemester}{Semester}
+\newcommand{\hwProfessor}{Professor}
+\newcommand{\hwAuthor}{Your Name}
 
 % --------------------------------------------------------------------------------
 % Title Page Layout (EDIT HERE)
 % --------------------------------------------------------------------------------
 \title{
     \vspace{2in}
-    \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
-    \normalsize\vspace{0.1in}\small{Due\ Date:\ \hmwkDueDate}\\
-    \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+    \textmd{\textbf{\hwCourse}}\\
+    \textmd{\textbf{\hwTitle}}\\
+    \normalsize\vspace{0.1in}
+    \small{Due \hwDue}\\
+    \vspace{0.1in}
+    \large{\textit{\hwSemester}}
     \vspace{3in}
 }
-\author{\hmwkAuthorName}
+\author{\hwAuthor}
 \date{}
 
 % --------------------------------------------------------------------------------
 % Header & Footer Layout (EDIT HERE)
 % --------------------------------------------------------------------------------
-\linespread{1.1}
-
 \pagestyle{fancy}
-\lhead{\hmwkAuthorName}
-\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime): \hmwkTitle}
+\fancyhf{}
+\lhead{\hwAuthor}
+\chead{\hwCourse\ (\hwSemester) \hwTitle}
 \rhead{\firstxmark}
 \lfoot{\lastxmark}
 \cfoot{\thepage}
 
-\renewcommand\headrulewidth{0.4pt}
 \renewcommand\footrulewidth{0.4pt}
-
-\setlength\parindent{0pt}
 
 % --------------------------------------------------------------------------------
 % Main Document
