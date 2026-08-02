@@ -13,8 +13,12 @@
 \RequirePackage{comment} % To use comment environments instead of spamming '%'
 \RequirePackage{parskip} % To think less about indenting and spacing
 \RequirePackage{wasysym} % For the \lightning contradiction symbol
-\RequirePackage{xcolor} % Pretty colors
+\RequirePackage[dvipsnames]{xcolor} % dvipsnames: loads 68 named colors (CMYK)
 \RequirePackage{hyperref}
+\RequirePackage{enumitem}
+\RequirePackage{graphicx}
+\RequirePackage{float}
+\graphicspath{ {./images/} }
 
 \usetikzlibrary{automata,positioning}
 
@@ -53,7 +57,6 @@
 \setlength\parindent{0pt}
 \end{comment}
 
-
 % --------------------------------------------------------------------------------
 % Create Problem Sections
 % --------------------------------------------------------------------------------
@@ -81,11 +84,11 @@
 % problem counter. This is useful for when the problems given for your
 % assignment aren't sequential. See the last 3 problems of this template for an
 % example.
-\newenvironment{homeworkProblem}[1][-1]{
+\newenvironment{problem}[1][-1]{
 	\ifnum#1>0
 	\setcounter{homeworkProblemCounter}{#1}
 	\fi
-	\section{Problem \arabic{homeworkProblemCounter}}
+	\subsection{Problem \arabic{homeworkProblemCounter}}
 	\setcounter{partCounter}{1}
 	\enterProblemHeader{homeworkProblemCounter}
 }{
@@ -116,6 +119,7 @@
 \newtheorem*{rem}{Remark}
 \newtheorem*{note}{Note}
 \newtheorem{case}{Case}
+\newtheorem*{hint}{Hint}
 
 % --------------------------------------------------------------------------------
 % Code formatting
@@ -128,6 +132,7 @@
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 
 \lstdefinestyle{mystyle}{
+	language=C++, % can edit to display preferred programming language
 	backgroundcolor=\color{backcolour},   
 	commentstyle=\color{codegreen},
 	keywordstyle=\color{magenta},
@@ -163,8 +168,9 @@
 % Integral dx
 \newcommand{\dx}{\mathrm{d}x}
 
-% Alias for the Solution section header
+% Alias for the Solution/Answer section header
 \newcommand{\solution}{\textbf{\large Solution}}
+\newcommand{\answer}{\textbf{\large Answer}}
 
 % Probability commands: Expectation, Variance, Covariance, Bias
 \newcommand{\E}{\mathrm{E}}
